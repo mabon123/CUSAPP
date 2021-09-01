@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#23958E"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/arizonia"
+                android:text="Cambodian University For Specialties"
+                android:textSize="18dp"
+                android:textStyle="italic"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/ic_baseline_search_24" />
+
+            <EditText
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="22dp"
+                android:background="@android:color/transparent"
+                android:hint="Search..."
+                android:textColorHint="#7A7272"
+                android:textSize="18dp"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/ic_baseline_chat_24" />
+
+
+        </LinearLayout>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="560dp"
+            >
+            <LinearLayout
+                android:layout_width="1080dp"
+                android:layout_height="560dp"
+               >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/group"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="41dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_baseline_home_24"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Home"
+                    android:textColor="#FF0037FF"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="41dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_baseline_apartment_24"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Campus"
+                    android:textColor="#FF0037FF"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="41dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/academic"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="academic"
+                    android:textColor="#FF0037FF"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="41dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_baseline_person_pin_24"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Me"
+                    android:textColor="#FF0037FF"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
