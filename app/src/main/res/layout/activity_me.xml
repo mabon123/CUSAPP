@@ -2,7 +2,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -62,115 +61,76 @@
 
 
         </LinearLayout>
-        <HorizontalScrollView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="560dp"
-            >
+            android:orientation="vertical">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="560dp"
-                android:orientation="horizontal"
-               >
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                    android:src="@drawable/profile"/>
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="40dp"
+                    android:text="Mr. Dollar"/>
 
-                        <LinearLayout
-                            android:layout_width="360dp"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:orientation="vertical"
-                            >
-
-                            <ImageView
-                                android:layout_width="150dp"
-                                android:layout_height="150dp"
-                                android:src="@drawable/logoacc" />
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="CUS Kampot Branch"
-                                android:textSize="25dp"
-                                android:gravity="center"/>
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:layout_width="360dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="15dp"
-                                android:src="@drawable/kp"/>
-
-                            <TextView
-                                android:layout_width="360dp"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="15dp"
-                                android:textColor="#000000"
-                                android:textSize="18dp"
-                                android:lineHeight="24dp"
-                                android:text="Building Nº 21, 1 Ousaphea Village, \nSangkat Kampong Kandal, Kampot City, Kampot Province.
-                                              \nTel +855 12 76 92 20
-                                              \nE-mail: info@cus.edu.kh"/>
-                        </LinearLayout>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/btn_personal_me"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="360dp"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        >
-
-                        <ImageView
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:src="@drawable/logoacc" />
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="CUS Banteay Meanchey Branch"
-                            android:textSize="23dp"
-                            android:gravity="center"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="360dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="15dp"
-                            android:src="@drawable/btmc"/>
-
-                        <TextView
-                            android:layout_width="360dp"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="15dp"
-                            android:textColor="#000000"
-                            android:textSize="18dp"
-                            android:lineHeight="24dp"
-                            android:text="Building Nº 73, Sophy Village, Sangkat Kampong Svay, Serey Sorphoan City, \nBanteay Meanchey Province.
-                                          \nTel +855 12 29 11 40
-                                          \nE-mail: info@cus.edu.kh
-"/>
-                    </LinearLayout>
-                </LinearLayout>
+                    android:background="@drawable/border"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/personal"/>
+                <ImageButton
+                    android:id="@+id/btn_payment_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/payment"/>
+                <ImageButton
+                    android:id="@+id/btn_setting_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/settings"/>
+                <ImageButton
+                    android:id="@+id/btn_about_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/about"/>
+                <ImageButton
+                    android:id="@+id/btn_help_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/help"/>
             </LinearLayout>
 
+        </LinearLayout>
 
-        </HorizontalScrollView>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -233,4 +193,3 @@
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
