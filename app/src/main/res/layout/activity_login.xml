@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="250dp"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/user"
+                android:hint="User name"
+                android:paddingLeft="25dp"
+                android:textColorHint="#7E7777"
+                android:textSize="20dp"
+                />
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/user"
+                android:hint="password"
+                android:paddingLeft="25dp"
+                android:textColorHint="#7E7777"
+                android:textSize="20dp"
+                android:layout_marginTop="25dp"
+                android:password="true"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="show password"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/loginbtn"
+                android:background="@drawable/border"/>
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/signup"
+                android:background="@drawable/border"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
